@@ -1,0 +1,60 @@
+export default function HomePage() { return ( <div className="font-sans"> {/* Hero Section */} <section className="relative bg-gradient-to-br from-[#d4171a] to-[#b01515] text-white px-8 py-20 flex flex-col lg:flex-row items-center justify-between"> <div className="z-10 max-w-xl"> <h1 className="text-5xl font-bold leading-tight">FASTENERS THAT PERFORM</h1> <p className="mt-4 text-lg">Built to last, engineered to hold.</p> <div className="mt-6 flex gap-4"> <button className="bg-white text-[#d4171a] px-6 py-2 rounded font-semibold">Get Quote</button> <button className="border border-white px-6 py-2 rounded font-semibold">Explore</button> </div> </div> <img src="/bolt.png" // Replace with the actual bolt image path alt="Bolt" className="absolute right-0 bottom-0 w-1/2 hidden lg:block" /> </section>
+
+{/* Visual Search Section */}
+  <section className="bg-white py-16 px-8 text-center">
+    <h2 className="text-3xl font-bold text-[#b01515]">VISUAL SEARCH</h2>
+    <p className="text-gray-700 mt-2">Upload an image to find matching <span className="font-semibold">fasteners</span></p>
+
+    <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div>
+        <div className="text-[#d4171a] text-3xl">✔️</div>
+        <h3 className="font-bold mt-2">Durability</h3>
+        <p className="text-sm text-gray-600">Made from premium materials</p>
+      </div>
+      <div>
+        <div className="text-[#d4171a] text-3xl">🛠️</div>
+        <h3 className="font-bold mt-2">Precision</h3>
+        <p className="text-sm text-gray-600">Engineered for each fit</p>
+      </div>
+      <div>
+        <div className="text-[#d4171a] text-3xl">✔️</div>
+        <h3 className="font-bold mt-2">Reliability</h3>
+        <p className="text-sm text-gray-600">Trusted by professionals</p>
+      </div>
+    </div>
+  </section>
+
+  {/* AI Assistant Section */}
+  <section className="grid grid-cols-1 md:grid-cols-2">
+    <div className="bg-[#d4171a] p-10 text-white flex flex-col justify-center">
+      <h2 className="text-3xl font-bold">ASK OUR AI</h2>
+      <button className="mt-4 bg-white text-[#d4171a] font-semibold px-6 py-2 rounded w-max">Ask a question...</button>
+    </div>
+    <div className="bg-black text-white p-10 flex items-center justify-center">
+      <h2 className="text-3xl font-bold leading-snug text-center">YOUR<br />SMART<br />ASSISTANT</h2>
+    </div>
+  </section>
+
+  {/* Testimonials Section */}
+  <section className="bg-white px-8 py-16">
+    <h2 className="text-[#b01515] text-2xl font-bold">WHAT OUR CLIENTS SAY</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 mt-6 gap-10">
+      <div>
+        <h3 className="text-4xl font-bold text-[#b01515]">10M+</h3>
+        <p className="text-gray-600 font-semibold">FASTENERS DELIVERED</p>
+      </div>
+      <div className="bg-gray-100 p-6 rounded shadow">
+        <p className="italic">“The best fasteners we've ever used. Outstanding quality and service!”</p>
+        <p className="text-right font-semibold mt-2">Sarah T.</p>
+      </div>
+    </div>
+  </section>
+
+  {/* Footer */}
+  <footer className="bg-[#b01515] text-white text-center py-6 text-sm">
+    © 2025 Viseco LLC. All rights reserved.
+  </footer>
+</div>
+
+); }
+
